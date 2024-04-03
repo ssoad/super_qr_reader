@@ -5,9 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_qr_code_scaner/flutter_qr_code_scaner.dart';
 
 class ScanQrcodePage extends StatefulWidget {
-  const ScanQrcodePage({Key? key}) : super(key: key);
+  const ScanQrcodePage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ScanQrcodePageState createState() => _ScanQrcodePageState();
 }
 
@@ -18,7 +19,7 @@ class _ScanQrcodePageState extends State<ScanQrcodePage> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       final _widget = QrcodeReaderView(
         key: _key,
         onScan: onScan,

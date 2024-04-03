@@ -2,33 +2,33 @@ PODS:
   - Flutter (1.0.0)
   - flutter_qr_code_scaner (0.0.1):
     - Flutter
-  - image_picker (0.0.1):
+  - image_picker_ios (0.0.1):
     - Flutter
-  - "permission_handler (5.1.0+2)":
+  - permission_handler_apple (9.3.0):
     - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - flutter_qr_code_scaner (from `.symlinks/plugins/flutter_qr_code_scaner/ios`)
-  - image_picker (from `.symlinks/plugins/image_picker/ios`)
-  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+  - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
   flutter_qr_code_scaner:
     :path: ".symlinks/plugins/flutter_qr_code_scaner/ios"
-  image_picker:
-    :path: ".symlinks/plugins/image_picker/ios"
-  permission_handler:
-    :path: ".symlinks/plugins/permission_handler/ios"
+  image_picker_ios:
+    :path: ".symlinks/plugins/image_picker_ios/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   flutter_qr_code_scaner: 015347bd291ce7dbae29766e2cddbe740c3d52e4
-  image_picker: 50e7c7ff960e5f58faa4d1f4af84a771c671bc4a
-  permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
+  image_picker_ios: b545a5f16c0fa88e3ecbbce3ed4de45567a8ec18
+  permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: 10b89cedf7f33b90643e96d56375beeda2efc638
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.15.2

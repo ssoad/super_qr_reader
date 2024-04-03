@@ -1,21 +1,23 @@
-import 'package:examplex/qr_code.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+import 'qr_code_scan.dart';
+
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomePage());
+    return const MaterialApp(home: HomePage());
   }
 }
 
 class HomePage extends StatefulWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  _HomePageState createState() => new _HomePageState();
+  _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
@@ -43,14 +45,14 @@ class _HomePageState extends State<HomePage> {
                 String results = await Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ScanQrcodePage(),
+                    builder: (context) => const ScanQrcodePage(),
                   ),
                 );
                 setState(() {
                   result = results;
                 });
               },
-              child: Text("扫码/tap to scan"),
+              child: const Text("扫码/tap to scan"),
             ),
             Text(result),
           ],
