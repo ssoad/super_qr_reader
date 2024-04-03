@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_qr_code_scaner/src/qrcode_reader_view.dart';
+import 'package:flutter_smart_qr/src/qrcode_reader_view.dart';
 
 class ScanView extends StatefulWidget {
   final bool hasHintText;

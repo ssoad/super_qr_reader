@@ -1,4 +1,4 @@
-group 'io.flutterfastkit.flutter_qr_code_scaner'
+group 'io.ssoad.flutter_smart_qr'
 version '1.0-SNAPSHOT'
 
 buildscript {
