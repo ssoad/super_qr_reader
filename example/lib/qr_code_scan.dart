@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_qr_code_scaner/flutter_qr_code_scaner.dart';
+import 'package:flutter_smart_qr/flutter_qr_code_scaner.dart';
 
 class ScanQrcodePage extends StatefulWidget {
   const ScanQrcodePage({super.key});
@@ -25,7 +25,7 @@ class _ScanQrcodePageState extends State<ScanQrcodePage> {
         onScan: onScan,
         hasImagePicker: true,
         hasHintText: true,
-        hasLightSwitch: true,
+        hasFlashLightSwitch: true,
         headerWidget: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,

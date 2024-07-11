@@ -1,4 +1,4 @@
-package io.flutterfastkit.flutter_qr_code_scaner.views;
+package io.ssoad.flutter_smart_qr.views;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
@@ -17,7 +17,7 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry;
 import io.flutter.plugin.platform.PlatformView;
-import io.flutterfastkit.flutter_qr_code_scaner.readerView.QRCodeReaderView;
+import io.ssoad.flutter_smart_qr.readerView.QRCodeReaderView;
 
 public class QrReaderView implements PlatformView, QRCodeReaderView.OnQRCodeReadListener, MethodChannel.MethodCallHandler {
 
@@ -49,7 +49,7 @@ public class QrReaderView implements PlatformView, QRCodeReaderView.OnQRCodeRead
         _view.setTorchEnabled((boolean)mParams.get(EXTRA_TORCH_ENABLED));
 
         // 操作监听
-        mMethodChannel = new MethodChannel(registrar.messenger(), "io.flutterfastkit.flutter_qr_code_scaner.reader_view_" + id);
+        mMethodChannel = new MethodChannel(registrar.messenger(), "io.ssoad.flutter_smart_qr.reader_view_" + id);
         mMethodChannel.setMethodCallHandler(this);
     }
 

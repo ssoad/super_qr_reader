@@ -8,14 +8,16 @@ import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
 class FlutterQrReader {
-  static const MethodChannel _channel = const MethodChannel('io.flutterfastkit.flutter_qr_code_scaner');
+  static const MethodChannel _channel =
+      const MethodChannel('io.ssoad.flutter_smart_qr');
 
   static Future<String?> imgScan(File? file) async {
     if (file?.existsSync() == false) {
       return null;
     }
     try {
-      final rest = await _channel.invokeMethod("imgQrCode", {"file": file!.path});
+      final rest =
+          await _channel.invokeMethod("imgQrCode", {"file": file!.path});
       return rest;
     } catch (e) {
       print(e);
@@ -55,7 +57,7 @@ class _QrReaderViewState extends State<QrReaderView> {
   Widget build(BuildContext context) {
     if (defaultTargetPlatform == TargetPlatform.android) {
       return AndroidView(
-        viewType: "io.flutterfastkit.flutter_qr_code_scaner.reader_view",
+        viewType: "io.ssoad.flutter_smart_qr.reader_view",
         creationParams: {
           "width": (widget.width * window.devicePixelRatio).floor(),
           "height": (widget.height * window.devicePixelRatio).floor(),
@@ -72,7 +74,7 @@ class _QrReaderViewState extends State<QrReaderView> {
       );
     } else if (defaultTargetPlatform == TargetPlatform.iOS) {
       return UiKitView(
-        viewType: "io.flutterfastkit.flutter_qr_code_scaner.reader_view",
+        viewType: "io.ssoad.flutter_smart_qr.reader_view",
         creationParams: {
           "width": widget.width,
           "height": widget.height,
@@ -105,7 +107,7 @@ class QrReaderViewController {
   final int id;
   final MethodChannel _channel;
   QrReaderViewController(this.id)
-      : _channel = MethodChannel('io.flutterfastkit.flutter_qr_code_scaner.reader_view_$id') {
+      : _channel = MethodChannel('io.ssoad.flutter_smart_qr.reader_view_$id') {
     _channel.setMethodCallHandler(_handleMessages);
   }
   ReadChangeBack? onQrBack;

@@ -30,7 +30,7 @@ class QrcodeReaderView extends StatefulWidget {
   /// TextAlign.center
   final TextAlign? centeredTextAlignment;
 
-  final bool hasLightSwitch;
+  final bool hasFlashLightSwitch;
 
   final bool hasImagePicker;
 
@@ -45,7 +45,7 @@ class QrcodeReaderView extends StatefulWidget {
     this.centeredText,
     this.centeredTextStyle,
     this.centeredTextAlignment,
-    this.hasLightSwitch = true,
+    this.hasFlashLightSwitch = true,
     this.hasImagePicker = true,
   }) : super(key: key);
 
@@ -71,7 +71,7 @@ class QrcodeReaderViewState extends State<QrcodeReaderView>
     openFlashlight = false;
     _initAnimation();
 
-    SchedulerBinding.instance?.addPostFrameCallback((_) async {
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
       bool isOk = await getPermissionOfCamera();
       if (isOk) {
         setState(() {
@@ -172,14 +172,14 @@ class QrcodeReaderViewState extends State<QrcodeReaderView>
 
   final flashOpen = Image.asset(
     "assets/tool_flashlight_open.png",
-    package: 'flutter_qr_code_scaner',
+    package: 'flutter_smart_qr',
     width: 35,
     height: 35,
     color: Colors.white,
   );
   final flashClose = Image.asset(
     "assets/tool_flashlight_close.png",
-    package: 'flutter_qr_code_scaner',
+    package: 'flutter_smart_qr',
     width: 35,
     height: 35,
     color: Colors.white,
@@ -254,7 +254,7 @@ class QrcodeReaderViewState extends State<QrcodeReaderView>
                     )
                   else
                     Container(),
-                  if (widget.hasLightSwitch)
+                  if (widget.hasFlashLightSwitch)
                     Positioned(
                       top: (constraints.maxHeight - qrScanSize) * 0.333333 +
                           qrScanSize -

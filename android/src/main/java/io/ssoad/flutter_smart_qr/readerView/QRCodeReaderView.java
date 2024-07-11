@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.flutterfastkit.flutter_qr_code_scaner.readerView;
+package io.ssoad.flutter_smart_qr.readerView;
 
 import android.content.Context;
 import android.content.pm.PackageManager;

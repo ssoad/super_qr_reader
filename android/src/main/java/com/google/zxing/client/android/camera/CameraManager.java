@@ -25,7 +25,7 @@ import com.google.zxing.PlanarYUVLuminanceSource;
 
 import java.io.IOException;
 
-import io.flutterfastkit.flutter_qr_code_scaner.readerView.SimpleLog;
+import io.ssoad.flutter_smart_qr.readerView.SimpleLog;
 import com.google.zxing.client.android.camera.open.OpenCamera;
 import com.google.zxing.client.android.camera.open.OpenCameraInterface;
 

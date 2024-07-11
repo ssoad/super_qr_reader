@@ -1,4 +1,4 @@
-package io.flutterfastkit.flutter_qr_code_scaner;
+package io.ssoad.flutter_smart_qr;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

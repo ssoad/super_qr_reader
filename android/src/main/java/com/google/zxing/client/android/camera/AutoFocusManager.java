@@ -40,7 +40,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.RejectedExecutionException;
 
-import io.flutterfastkit.flutter_qr_code_scaner.readerView.SimpleLog;
+import io.ssoad.flutter_smart_qr.readerView.SimpleLog;
 
 final class AutoFocusManager implements Camera.AutoFocusCallback {
 

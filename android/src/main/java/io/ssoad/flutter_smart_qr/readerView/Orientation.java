@@ -1,4 +1,4 @@
-package io.flutterfastkit.flutter_qr_code_scaner.readerView;
+package io.ssoad.flutter_smart_qr.readerView;
 
 public enum Orientation {
   PORTRAIT, LANDSCAPE

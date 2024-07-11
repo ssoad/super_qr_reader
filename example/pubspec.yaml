@@ -10,7 +10,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
-  flutter_qr_code_scaner:
+  flutter_smart_qr:
     path: ../
 
 dev_dependencies:

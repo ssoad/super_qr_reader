@@ -1,4 +1,4 @@
-package io.flutterfastkit.flutter_qr_code_scaner;
+package io.ssoad.flutter_smart_qr;
 
 import android.annotation.SuppressLint;
 import android.os.AsyncTask;
@@ -10,15 +10,15 @@ import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
-import io.flutterfastkit.flutter_qr_code_scaner.factorys.QrReaderFactory;
+import io.ssoad.flutter_smart_qr.factorys.QrReaderFactory;
 
 
 /** FlutterQrReaderPlugin */
 public class FlutterQrReaderPlugin implements MethodCallHandler {
 
 //  private static final int REQUEST_CODE_CAMERA_PERMISSION = 3777;
-  private static final String CHANNEL_NAME = "io.flutterfastkit.flutter_qr_code_scaner";
-  private static final String CHANNEL_VIEW_NAME = "io.flutterfastkit.flutter_qr_code_scaner.reader_view";
+  private static final String CHANNEL_NAME = "io.ssoad.flutter_smart_qr";
+  private static final String CHANNEL_VIEW_NAME = "io.ssoad.flutter_smart_qr.reader_view";
 
 
   private  Registrar registrar;

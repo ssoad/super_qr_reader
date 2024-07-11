@@ -15,7 +15,7 @@ class ScanView extends StatefulWidget {
   /// TextAlign.center
   final TextAlign? centeredTextAlignment;
 
-  final bool hasLightSwitch;
+  final bool hasFlashLightSwitch;
 
   final bool hasImagePicker;
 
@@ -25,7 +25,7 @@ class ScanView extends StatefulWidget {
     this.centeredText,
     this.centeredTextStyle,
     this.centeredTextAlignment,
-    this.hasLightSwitch = true,
+    this.hasFlashLightSwitch = true,
     this.hasImagePicker = true,
   }) : super(key: key);
 
@@ -46,7 +46,7 @@ class _ScanViewState extends State<ScanView> {
       body: QrcodeReaderView(
         key: _key,
         hasHintText: widget.hasHintText,
-        hasLightSwitch: widget.hasLightSwitch,
+        hasFlashLightSwitch: widget.hasFlashLightSwitch,
         centeredText: widget.centeredText,
         onScan: onScan,
         hasImagePicker: widget.hasImagePicker,

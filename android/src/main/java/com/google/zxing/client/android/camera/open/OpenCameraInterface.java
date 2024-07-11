@@ -18,7 +18,7 @@ package com.google.zxing.client.android.camera.open;
 
 import android.hardware.Camera;
 
-import io.flutterfastkit.flutter_qr_code_scaner.readerView.SimpleLog;
+import io.ssoad.flutter_smart_qr.readerView.SimpleLog;
 
 
 /**

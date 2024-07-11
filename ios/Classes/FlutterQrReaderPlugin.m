@@ -5,10 +5,10 @@
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
     // 注册原生视图
     QrReaderViewFactory *viewFactory = [[QrReaderViewFactory alloc] initWithRegistrar:registrar];
-    [registrar registerViewFactory:viewFactory withId:@"io.flutterfastkit.flutter_qr_code_scaner.reader_view"];
+    [registrar registerViewFactory:viewFactory withId:@"io.ssoad.flutter_smart_qr.reader_view"];
     
     FlutterMethodChannel* channel = [FlutterMethodChannel
-                                     methodChannelWithName:@"io.flutterfastkit.flutter_qr_code_scaner"
+                                     methodChannelWithName:@"io.ssoad.flutter_smart_qr"
                                      binaryMessenger:[registrar messenger]];
     FlutterQrReaderPlugin* instance = [[FlutterQrReaderPlugin alloc] init];
     [registrar addMethodCallDelegate:instance channel:channel];

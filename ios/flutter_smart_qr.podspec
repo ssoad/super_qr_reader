@@ -2,7 +2,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'flutter_qr_code_scaner'
+  s.name             = 'flutter_smart_qr'
   s.version          = '0.0.1'
   s.summary          = 'QR code (scan code &#x2F; picture) recognition （AndroidView&#x2F;UiKitView）'
   s.description      = <<-DESC
